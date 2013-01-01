@@ -6,6 +6,7 @@ from flask import request
 from lib import url, html, synology, extension, links
 import re
 import base64
+import os
 app = Flask(__name__)
 
 def openConfig():
@@ -132,4 +133,5 @@ with app.test_request_context('/enviar', method='POST'):
 
 if __name__ == '__main__':
     app.debug = True
-    app.run(host='0.0.0.0', port=8080)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
