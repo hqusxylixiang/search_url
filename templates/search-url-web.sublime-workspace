@@ -1,0 +1,366 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Val",
+				"validLinks"
+			],
+			[
+				"get",
+				"getLineList()	(attribute, function)"
+			],
+			[
+				"load",
+				"load_track(track)	(attribute, function)"
+			],
+			[
+				"top",
+				"toplist"
+			],
+			[
+				"play",
+				"playlist	(local, instance)"
+			],
+			[
+				"as",
+				"as_track"
+			],
+			[
+				"from",
+				"from_string"
+			],
+			[
+				"LIN",
+				"LINK_TRACK"
+			],
+			[
+				"lo",
+				"load_playlist(playlist)	(attribute, function)"
+			],
+			[
+				"brow",
+				"browse"
+			],
+			[
+				"qu",
+				"queue"
+			],
+			[
+				"ses",
+				"session	(local, instance)"
+			],
+			[
+				"rem",
+				"remember_me	(local, instance)"
+			],
+			[
+				"is",
+				"is_loaded"
+			],
+			[
+				"proc",
+				"process_events"
+			],
+			[
+				"container_",
+				"container_manager	(attribute, instance)"
+			],
+			[
+				"cont",
+				"container_loaded"
+			],
+			[
+				"Spot",
+				"SpotifySessionManager	(imported, instance)"
+			],
+			[
+				"Spo",
+				"SpotifyPlaylistManager	(imported, instance)"
+			],
+			[
+				"se",
+				"session"
+			],
+			[
+				"Spotif",
+				"SpotifySessionManager	(imported, instance)"
+			],
+			[
+				"pas",
+				"password"
+			],
+			[
+				"logged",
+				"logged_in(session, error)	(attribute, function)"
+			],
+			[
+				"Sp",
+				"SpotifySessionManager	(imported, instance)"
+			],
+			[
+				"re",
+				"remove	(builtin, function)"
+			],
+			[
+				"ex",
+				"extensions	(attribute, instance)"
+			],
+			[
+				"all",
+				"allLinks	(local, instance)"
+			],
+			[
+				"find",
+				"findLinksExtension(links, extensions, forb)	(attribute, function)"
+			],
+			[
+				"url",
+				"url_content	(local, instance)"
+			],
+			[
+				"exte",
+				"extension	(attribute, instance)"
+			],
+			[
+				"for",
+				"forbbiden	(attribute, instance)"
+			],
+			[
+				"valid",
+				"validLinks	(local, instance)"
+			],
+			[
+				"lis",
+				"listOfExceptions	(imported, class)"
+			],
+			[
+				"list",
+				"listLinks	(imported, class)"
+			],
+			[
+				"i",
+				"isValidURL(url)	(attribute, function)"
+			],
+			[
+				"ur",
+				"url_to_Check	(local, instance)"
+			],
+			[
+				"link",
+				"linksExtension	(local, instance)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 247.0,
+		"selected_items":
+		[
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"snip",
+				"Snippet: html"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Volumes/DATOS/Dropbox/proyectos/search_url_web/templates/index.html",
+		"/Volumes/DATOS/Dropbox/proyectos/search_url_web/templates/respuesta.html",
+		"/Volumes/DATOS/Dropbox/proyectos/search_url_extension/main/lib/html.py",
+		"/Volumes/DATOS/Dropbox/proyectos/search_url_web/search_url/lib/links.py",
+		"/Volumes/DATOS/Dropbox/proyectos/search_url_extension/main/lib/extension.py",
+		"/Volumes/DATOS/Dropbox/proyectos/search_url_extension/main/main.py",
+		"/Volumes/Datos_Red/Proyectos Web/guiametal/guiametal/guiametal/settings.py",
+		"/Volumes/DATOS/Dropbox/proyectos/search_url_web/manage.py",
+		"/Volumes/DATOS/Dropbox/proyectos/search_url_extension/main/test.py",
+		"/Volumes/DATOS/Dropbox/proyectos/search_url_web/search_url_web/settings.py",
+		"/Volumes/DATOS/Dropbox/proyectos/search_url_web/search_url_web/urls.py",
+		"/Volumes/DATOS/Dropbox/proyectos/search_url_web/search_url/views.py",
+		"/Volumes/DATOS/Dropbox/proyectos/search_url_extension/main/lib/url.py",
+		"/Volumes/DATOS/Dropbox/proyectos/search_url_web/search_url/lib/html.py",
+		"/Volumes/DATOS/Dropbox/proyectos/search_url_web/search_url/index.html",
+		"/Volumes/DATOS/Dropbox/proyectos/spotiweb/spotify/__init__.py",
+		"/Volumes/DATOS/Dropbox/proyectos/spotiweb/session.py",
+		"/Volumes/DATOS/Dropbox/proyectos/spotiweb/sp.py",
+		"/Volumes/DATOS/Dropbox/proyectos/spotiweb/test.py",
+		"/Volumes/DATOS/Dropbox/proyectos/spotiweb/spotiweb/spoti/test.py",
+		"/Volumes/DATOS/proyectos/pyspotify/spotify/manager/session.py",
+		"/Volumes/DATOS/Dropbox/proyectos/spotiweb/spotiweb/spotiweb/settings.py",
+		"/Volumes/DATOS/Dropbox/proyectos/spotiweb/spotiweb/spotiweb/urls.py",
+		"/Volumes/DATOS/proyectos/pyspotify/examples/jukebox.py",
+		"/Volumes/DATOS/Dropbox/proyectos/spotiweb/spotiweb/spoti/views.py",
+		"/Volumes/DATOS/Dropbox/proyectos/spotiweb/spotiweb/spoti/models.py",
+		"/Volumes/DATOS/Dropbox/proyectos/spotiweb/tmp/Users/radkowski-user/social_manager.bnk",
+		"/Volumes/DATOS/Dropbox/proyectos/spotiweb/trace.py",
+		"/Volumes/DATOS/Dropbox/proyectos/spotiweb/spotify/audiosink/alsa.py",
+		"/Volumes/DATOS/Dropbox/proyectos/spotiweb/spotify/manager/container.py",
+		"/Volumes/DATOS/Dropbox/proyectos/spotiweb/spotify/settings.py",
+		"/Volumes/DATOS/Dropbox/proyectos/search_url_extension/main/lib/__init__.py"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"name",
+			"load_playlist",
+			"loop",
+			"music_del",
+			"music_",
+			"self.ctr",
+			"pl",
+			"is_loaded",
+			"loaded",
+			"print",
+			"ls",
+			"loggin",
+			"prompt",
+			"connect"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
