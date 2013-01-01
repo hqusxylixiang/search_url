@@ -107,10 +107,12 @@ def enviar():
     for download in result:
         download = download.replace('\r', '')
         toAdd += download + ', '
+    t = 'resultado.html'
     if (syno.addDownload(toAdd)):
-        return 'Añadido'
+        resultado = u'Añadido'
     else:
-        return 'Fallo'
+        resultado = u'Algo a fallado'
+    return render_template(t, resultado=resultado)
 
 with app.test_request_context('/', method='POST'):
     # now you can do something with the request until the
