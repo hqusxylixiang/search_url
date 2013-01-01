@@ -3,9 +3,8 @@
 from flask import Flask
 from flask import render_template
 from flask import request
-from lib import url, html, synology, extension, links
+from lib import url, html, synology, extension
 import re
-import base64
 app = Flask(__name__)
 
 def openConfig():
