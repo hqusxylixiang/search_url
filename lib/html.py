@@ -35,7 +35,8 @@ class html:
         validLinks = []
         for link in allLinks:
             try:
-                validLinks.append(link['href'])
+                if not link['href'].startswith('javascript'):
+                    validLinks.append(link['href'])
             except KeyError:
                 pass
 
@@ -91,9 +92,11 @@ class listOfExceptions:
                 if self.WEBS[0] in url:
                     self.url.append(self.fix_CS50(url))
             else:
-                if self.WEBS[1] in url:
-                    if 'descargar' in url:
+                if 'mejorenvo' in origin:
+                    if self.WEBS[1] in url:
                         self.url.append(self.fixMejorEnVo(url, origin))
+                    elif url.startswith('/'):
+                        self.url.append('http://www.mejorenvo.com' + url)
                 else:
                     self.url.append(url)
         return self.url

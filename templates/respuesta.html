@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Prueba</title>
+	<title>surl - Enlaces</title>
 
 	<link rel="stylesheet" href="/static/css/bootstrap.css">
 	<link rel="stylesheet" href="/static/css/style.css">
@@ -13,22 +13,34 @@
 });
 </script>
 </head>
+<body>
+
+<div class="container-fluid">
+<div class="row-fluid">
+	<div class="span8">
+	<h1>surl - Enlaces </h1>
+	{% if synology %}
+	<form action="/enviar" method='POST'>
+	<textarea  name="links" id="links" cols="100" rows='30'>{%for result in resultado %}
+	{{result}}
+	{% endfor %}</textarea><br />
+
+	<select name='synology'>
+		{% for syn in synology %}
+		<option value="{{syn.id}}">{{syn.usuario}} -- {{syn.ip_diskstation}}:{{syn.port}}</option>
+		{% endfor %}
+	</select>
+	<input type="submit" value=" Enviar a Synology "> </input>
+	</form>
+	{% endif %}
+	</div>
+</div>
+</div>
+
+
 <div>
 
-{% if synology %}
-<form action="/enviar" method='POST'>
-<textarea  name="links" id="links" cols="100" rows='30'>{%for result in resultado %}
-{{result}}
-{% endfor %}</textarea><br />
 
-<select name='synology'>
-	{% for syn in synology %}
-	<option value="{{syn.id}}">{{syn.usuario}} -- {{syn.ip_diskstation}}:{{syn.port}}</option>
-	{% endfor %}
-</select>
-<input type="submit" value=" Enviar a Synology "> </input>
-</form>
-{% endif %}
 </div>
 
 </body>

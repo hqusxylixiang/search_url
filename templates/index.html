@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Prueba</title>
+	<title>surl</title>
 
 	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
+<div class="container-fluid">
+<div class="row-fluid">
+	<div class="span8">
+	<h1>surl</h1>
+	<h6>Search URL</h6>
 	<form action="/enlaces" method='POST'>
+		<div>
 		<label for="url">URL</label>
 		<input type="text" id='url' name='url'></input>
+		</div>
+		<div>
 		<label for="extensions">Extensiones</label>
 		<input type="text" id='ext' name='ext'></input>
+		</div>
+		<div>
 		<label for="extensions">Excluir</label>
 		<input type="text" id='forb' name='forb'></input>
+		</div>
 		<input type="submit"> </input>
 	</form>
+	</div>
+</div>
+</div>
 </body>
 </html>
