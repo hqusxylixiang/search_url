@@ -56,20 +56,24 @@ class run:
 
     def check(self):
         if self.url.isValidURL():
-            url_content = self.url.returnUrlContent()
-            allLinks = html.html(url_content)
-            allLinks = allLinks.findLinks()
-            validLinks = self.extensions.searchExtension(allLinks)
-            print validLinks
-            forb = self.forbbiden.getExtension()
-            if forb:
-                for f in forb:
-                    if f in validLinks:
-                        validLinks.remove(f)
-            print 'QUITADOS LOS INCORRECTOS'
-            validLinks = html.listOfExceptions().check(validLinks, self.url.getURL())
-            print 'EXCEPCIONES'
-            return validLinks
+            try:
+                url_content = self.url.returnUrlContent()
+                allLinks = html.html(url_content)
+                allLinks = allLinks.findLinks()
+                validLinks = self.extensions.searchExtension(allLinks)
+                print validLinks
+                forb = self.forbbiden.getExtension()
+                if forb:
+                    for f in forb:
+                        if f in validLinks:
+                            validLinks.remove(f)
+                print 'QUITADOS LOS INCORRECTOS'
+                validLinks = html.listOfExceptions().check(validLinks, self.url.getURL())
+                print 'EXCEPCIONES'
+                return validLinks
+            except url.URLError:
+                raise url.URLError()
+
 
 
 @app.route('/', methods=['GET'])
@@ -79,8 +83,10 @@ def home():
 
 
 
-@app.route('/enlaces', methods=['POST'])
+@app.route('/enlaces', methods=['POST', 'GET'])
 def enlaces():
+    t = 'respuesta.html'
+    sy_conf = openConfig()
     if request.method == 'POST':
             form = request.form
             url = form['url']
@@ -89,11 +95,15 @@ def enlaces():
             forb = form['forb']
             forb = re.split(',', forb)
             r = run(url, ext, forb)
-            sy_conf = openConfig()
-            result = r.check()
-            t = 'respuesta.html'
+            try:
+                result = r.check()
+            except:
+                result = [u'No se ha podido encontrar la página']
+            
             return render_template(t, resultado=result, synology=sy_conf)
             # return render_template(t)
+    else:
+        return render_template(t, synology=sy_conf)
 
 
 @app.route('/enviar', methods=['POST', 'GET'])
@@ -125,6 +135,12 @@ with app.test_request_context('/enlaces', method='POST'):
     # end of the with block, such as basic assertions:
     assert request.path == '/enlaces'
     assert request.method == 'POST'
+
+with app.test_request_context('/enlaces', method='GET'):
+    # now you can do something with the request until the
+    # end of the with block, such as basic assertions:
+    assert request.path == '/enlaces'
+    assert request.method == 'GET'
 
 with app.test_request_context('/enviar', method='POST'):
     # now you can do something with the request until the

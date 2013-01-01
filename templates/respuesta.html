@@ -14,11 +14,8 @@
 </script>
 </head>
 <div>
-{% if ok %}
-	<h2>{{ok}}</h2>
-{% endif %}
 
-{% if resultado %}
+{% if synology %}
 <form action="/enviar" method='POST'>
 <textarea  name="links" id="links" cols="100" rows='30'>{%for result in resultado %}
 {{result}}
